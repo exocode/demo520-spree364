@@ -61,3 +61,6 @@ gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3'
 
 gem 'spree_i18n', github: 'spree-contrib/spree_i18n'
+gem 'globalize', git: 'https://github.com/globalize/globalize'
+gem 'activemodel-serializers-xml'
+gem 'spree_globalize', github: 'spree-contrib/spree_globalize'
