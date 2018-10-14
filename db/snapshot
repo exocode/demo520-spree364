@@ -1,5 +1,5 @@
 ---
-:now: 2018-10-14 18:46:51.380538000 Z
+:now: 2018-10-14 18:56:59.156356000 Z
 :tables:
 - :table: active_storage_attachments
   :rows: !ruby/object:ActiveRecord::Result
@@ -695,6 +695,7 @@
     - scope
     - created_at
     - deleted_at
+    - locale
     rows:
     - - 1
       - ruby-on-rails-tote
@@ -703,12 +704,14 @@
       - 
       - 2018-10-14 18:26:37.000000000 Z
       - 
+      - 
     - - 2
       - ruby-on-rails-bag
       - 2
       - Spree::Product
       - 
       - 2018-10-14 18:26:37.000000000 Z
+      - 
       - 
     - - 3
       - ruby-on-rails-baseball-jersey
@@ -717,12 +720,14 @@
       - 
       - 2018-10-14 18:26:37.000000000 Z
       - 
+      - 
     - - 4
       - ruby-on-rails-jr-spaghetti
       - 4
       - Spree::Product
       - 
       - 2018-10-14 18:26:37.000000000 Z
+      - 
       - 
     - - 5
       - ruby-on-rails-ringer-t-shirt
@@ -731,12 +736,14 @@
       - 
       - 2018-10-14 18:26:37.000000000 Z
       - 
+      - 
     - - 6
       - ruby-baseball-jersey
       - 6
       - Spree::Product
       - 
       - 2018-10-14 18:26:37.000000000 Z
+      - 
       - 
     - - 7
       - apache-baseball-jersey
@@ -745,12 +752,14 @@
       - 
       - 2018-10-14 18:26:37.000000000 Z
       - 
+      - 
     - - 8
       - spree-baseball-jersey
       - 8
       - Spree::Product
       - 
       - 2018-10-14 18:26:37.000000000 Z
+      - 
       - 
     - - 9
       - spree-jr-spaghetti
@@ -759,12 +768,14 @@
       - 
       - 2018-10-14 18:26:37.000000000 Z
       - 
+      - 
     - - 10
       - spree-ringer-t-shirt
       - 10
       - Spree::Product
       - 
       - 2018-10-14 18:26:37.000000000 Z
+      - 
       - 
     - - 11
       - spree-tote
@@ -773,12 +784,14 @@
       - 
       - 2018-10-14 18:26:37.000000000 Z
       - 
+      - 
     - - 12
       - spree-bag
       - 12
       - Spree::Product
       - 
       - 2018-10-14 18:26:38.000000000 Z
+      - 
       - 
     - - 13
       - ruby-on-rails-mug
@@ -787,12 +800,14 @@
       - 
       - 2018-10-14 18:26:38.000000000 Z
       - 
+      - 
     - - 14
       - ruby-on-rails-stein
       - 14
       - Spree::Product
       - 
       - 2018-10-14 18:26:38.000000000 Z
+      - 
       - 
     - - 15
       - spree-stein
@@ -801,12 +816,14 @@
       - 
       - 2018-10-14 18:26:38.000000000 Z
       - 
+      - 
     - - 16
       - spree-mug
       - 16
       - Spree::Product
       - 
       - 2018-10-14 18:26:38.000000000 Z
+      - 
       - 
     - - 17
       - categories
@@ -815,12 +832,14 @@
       - 
       - 2018-10-14 18:26:38.000000000 Z
       - 
+      - 
     - - 18
       - brands
       - 2
       - Spree::Taxon
       - 
       - 2018-10-14 18:26:38.000000000 Z
+      - 
       - 
     - - 19
       - bags
@@ -829,12 +848,14 @@
       - 
       - 2018-10-14 18:26:38.000000000 Z
       - 
+      - 
     - - 20
       - mugs
       - 4
       - Spree::Taxon
       - 
       - 2018-10-14 18:26:38.000000000 Z
+      - 
       - 
     - - 21
       - clothing
@@ -843,12 +864,14 @@
       - 
       - 2018-10-14 18:26:38.000000000 Z
       - 
+      - 
     - - 22
       - shirts
       - 6
       - Spree::Taxon
       - 
       - 2018-10-14 18:26:38.000000000 Z
+      - 
       - 
     - - 23
       - t-shirts
@@ -857,12 +880,14 @@
       - 
       - 2018-10-14 18:26:38.000000000 Z
       - 
+      - 
     - - 24
       - ruby
       - 8
       - Spree::Taxon
       - 
       - 2018-10-14 18:26:39.000000000 Z
+      - 
       - 
     - - 25
       - apache
@@ -871,6 +896,7 @@
       - 
       - 2018-10-14 18:26:39.000000000 Z
       - 
+      - 
     - - 26
       - spree
       - 10
@@ -878,12 +904,14 @@
       - 
       - 2018-10-14 18:26:39.000000000 Z
       - 
+      - 
     - - 27
       - rails
       - 11
       - Spree::Taxon
       - 
       - 2018-10-14 18:26:39.000000000 Z
+      - 
       - 
     hash_rows: 
     column_types: {}
@@ -4118,6 +4146,33 @@
       - !ruby/object:BigDecimal 18:0.0
     hash_rows: 
     column_types: {}
+- :table: spree_option_type_translations
+  :rows: !ruby/object:ActiveRecord::Result
+    columns:
+    - id
+    - spree_option_type_id
+    - locale
+    - created_at
+    - updated_at
+    - name
+    - presentation
+    rows:
+    - - 1
+      - 1
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:33.000000000 Z
+      - tshirt-size
+      - Size
+    - - 2
+      - 2
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:33.000000000 Z
+      - tshirt-color
+      - Color
+    hash_rows: 
+    column_types: {}
 - :table: spree_option_types
   :rows: !ruby/object:ActiveRecord::Result
     columns:
@@ -4140,6 +4195,68 @@
       - 2
       - 2018-10-14 18:26:39.000000000 Z
       - 2018-10-14 18:26:39.000000000 Z
+    hash_rows: 
+    column_types: {}
+- :table: spree_option_value_translations
+  :rows: !ruby/object:ActiveRecord::Result
+    columns:
+    - id
+    - spree_option_value_id
+    - locale
+    - created_at
+    - updated_at
+    - name
+    - presentation
+    rows:
+    - - 1
+      - 1
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Small
+      - S
+    - - 2
+      - 2
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Medium
+      - M
+    - - 3
+      - 3
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Large
+      - L
+    - - 4
+      - 4
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Extra Large
+      - XL
+    - - 5
+      - 5
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Red
+      - Red
+    - - 6
+      - 6
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Green
+      - Green
+    - - 7
+      - 7
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Blue
+      - Blue
     hash_rows: 
     column_types: {}
 - :table: spree_option_value_variants
@@ -4526,6 +4643,14 @@
       - spree_i18n/configuration/available_locales
       - 2018-10-14 18:37:33.000000000 Z
       - 2018-10-14 18:37:33.000000000 Z
+    - - 4
+      - |
+        ---
+        - :de
+        - :en
+      - spree_globalize/configuration/supported_locales
+      - 2018-10-14 18:55:20.000000000 Z
+      - 2018-10-14 18:55:20.000000000 Z
     hash_rows: 
     column_types: {}
 - :table: spree_prices
@@ -5260,6 +5385,656 @@
       - 8
     hash_rows: 
     column_types: {}
+- :table: spree_product_property_translations
+  :rows: !ruby/object:ActiveRecord::Result
+    columns:
+    - id
+    - spree_product_property_id
+    - locale
+    - created_at
+    - updated_at
+    - value
+    rows:
+    - - 1
+      - 1
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Wilson
+    - - 2
+      - 2
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Wannabe Sports
+    - - 3
+      - 3
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - JK1002
+    - - 4
+      - 4
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Baseball Jersey
+    - - 5
+      - 5
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Long
+    - - 6
+      - 6
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - 100% cotton
+    - - 7
+      - 7
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Loose
+    - - 8
+      - 8
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Men's
+    - - 9
+      - 9
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Jerseys
+    - - 10
+      - 10
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Resiliance
+    - - 11
+      - 11
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - TL174
+    - - 12
+      - 12
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Jr. Spaghetti T
+    - - 13
+      - 13
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - None
+    - - 14
+      - 14
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - 90% Cotton, 10% Nylon
+    - - 15
+      - 15
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Form
+    - - 16
+      - 16
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Women's
+    - - 17
+      - 17
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Jerseys
+    - - 18
+      - 18
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Conditioned
+    - - 19
+      - 19
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - TL9002
+    - - 20
+      - 20
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Ringer T
+    - - 21
+      - 21
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Short
+    - - 22
+      - 22
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - 100% Vellum
+    - - 23
+      - 23
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Loose
+    - - 24
+      - 24
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Men's
+    - - 25
+      - 25
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Tote
+    - - 26
+      - 26
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - 15' x 18' x 6'
+    - - 27
+      - 27
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Canvas
+    - - 28
+      - 28
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Messenger
+    - - 29
+      - 29
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - 14 1/2' x 12' x 5'
+    - - 30
+      - 30
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - 600 Denier Polyester
+    - - 31
+      - 31
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Mug
+    - - 32
+      - 32
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - 4.5' tall, 3.25' dia.
+    - - 33
+      - 33
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Stein
+    - - 34
+      - 34
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - 6.75' tall, 3.75' dia. base, 3' dia. rim
+    - - 35
+      - 35
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Stein
+    - - 36
+      - 36
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - 6.75' tall, 3.75' dia. base, 3' dia. rim
+    - - 37
+      - 37
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Mug
+    - - 38
+      - 38
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - 4.5' tall, 3.25' dia.
+    - - 39
+      - 39
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Tote
+    - - 40
+      - 40
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - 15' x 18' x 6'
+    - - 41
+      - 41
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Messenger
+    - - 42
+      - 42
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - 14 1/2' x 12' x 5'
+    - - 43
+      - 43
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Wilson
+    - - 44
+      - 44
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Wannabe Sports
+    - - 45
+      - 45
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - JK1002
+    - - 46
+      - 46
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Baseball Jersey
+    - - 47
+      - 47
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Long
+    - - 48
+      - 48
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - 100% cotton
+    - - 49
+      - 49
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Loose
+    - - 50
+      - 50
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Men's
+    - - 51
+      - 51
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Jerseys
+    - - 52
+      - 52
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Resiliance
+    - - 53
+      - 53
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - TL174
+    - - 54
+      - 54
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Jr. Spaghetti T
+    - - 55
+      - 55
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - None
+    - - 56
+      - 56
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - 90% Cotton, 10% Nylon
+    - - 57
+      - 57
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Form
+    - - 58
+      - 58
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Women's
+    - - 59
+      - 59
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Jerseys
+    - - 60
+      - 60
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Conditioned
+    - - 61
+      - 61
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - TL9002
+    - - 62
+      - 62
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Ringer T
+    - - 63
+      - 63
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Short
+    - - 64
+      - 64
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - 100% Vellum
+    - - 65
+      - 65
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Loose
+    - - 66
+      - 66
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Men's
+    hash_rows: 
+    column_types: {}
+- :table: spree_product_translations
+  :rows: !ruby/object:ActiveRecord::Result
+    columns:
+    - id
+    - spree_product_id
+    - locale
+    - created_at
+    - updated_at
+    - name
+    - description
+    - meta_description
+    - meta_keywords
+    - slug
+    - deleted_at
+    - meta_title
+    rows:
+    - - 1
+      - 1
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Ruby on Rails Tote
+      - Minima facilis eligendi animi ipsum consectetur corporis incidunt neque. Voluptatem
+        maxime cupiditate eum sequi. Nihil quia dolor accusantium voluptas voluptatem
+        vero culpa quisquam. Voluptatibus iusto voluptatem dolorum omnis a.
+      - 
+      - 
+      - ruby-on-rails-tote
+      - 
+      - 
+    - - 2
+      - 2
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Ruby on Rails Bag
+      - Aut tenetur asperiores omnis sint neque exercitationem in. Aliquid itaque
+        ea numquam qui aspernatur sed quia dolor. Commodi est qui assumenda perspiciatis
+        ullam tempora.
+      - 
+      - 
+      - ruby-on-rails-bag
+      - 
+      - 
+    - - 3
+      - 3
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Ruby on Rails Baseball Jersey
+      - Perferendis minus quis veritatis at. Fugiat excepturi in consequatur rerum
+        suscipit. Odit sit cum hic maiores ut qui quod.
+      - 
+      - 
+      - ruby-on-rails-baseball-jersey
+      - 
+      - 
+    - - 4
+      - 4
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Ruby on Rails Jr. Spaghetti
+      - Accusantium in maiores quia autem voluptate et dolores. Et eligendi impedit
+        dolorem est minima similique aspernatur sit. Qui voluptatem delectus corporis
+        voluptatibus eligendi et sunt. Qui veniam quam tempora nemo aspernatur illum
+        quo.
+      - 
+      - 
+      - ruby-on-rails-jr-spaghetti
+      - 
+      - 
+    - - 5
+      - 5
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Ruby on Rails Ringer T-Shirt
+      - Qui aut eos in sed vel optio exercitationem blanditiis. Est ullam et et porro
+        dolor. Harum est vero qui praesentium dignissimos tempora aperiam. Odio et
+        illo expedita incidunt sed saepe.
+      - 
+      - 
+      - ruby-on-rails-ringer-t-shirt
+      - 
+      - 
+    - - 6
+      - 6
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Ruby Baseball Jersey
+      - Rerum est aut dignissimos in et fuga expedita. Culpa doloremque esse quidem
+        delectus et. Assumenda et tempora deleniti ipsum aut illo praesentium sequi.
+        Et natus et illo excepturi sunt similique.
+      - 
+      - 
+      - ruby-baseball-jersey
+      - 
+      - 
+    - - 7
+      - 7
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Apache Baseball Jersey
+      - Mollitia nihil cumque possimus veniam doloremque recusandae. Eos eveniet expedita
+        hic nihil id dolor animi tempora. Fugit dicta vero sunt omnis alias id et
+        ipsa.
+      - 
+      - 
+      - apache-baseball-jersey
+      - 
+      - 
+    - - 8
+      - 8
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Spree Baseball Jersey
+      - Laboriosam cum praesentium mollitia fuga eos quasi. Ut expedita non earum
+        porro beatae quos tenetur itaque. Est iusto sit quia et enim earum velit sit.
+        Necessitatibus sit culpa minima fugiat voluptates quia. Vitae blanditiis tempore
+        minima accusantium consequatur perspiciatis.
+      - 
+      - 
+      - spree-baseball-jersey
+      - 
+      - 
+    - - 9
+      - 9
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Spree Jr. Spaghetti
+      - Tenetur quam veritatis ut magnam itaque. Rem quisquam non porro iusto. Non
+        deleniti ut consectetur quaerat et rerum nisi.
+      - 
+      - 
+      - spree-jr-spaghetti
+      - 
+      - 
+    - - 10
+      - 10
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Spree Ringer T-Shirt
+      - Cum omnis tempora ut facilis rerum delectus sed. Sunt quas ut minima enim.
+        Dolorem praesentium qui eos quae. Eos et ullam et molestias alias provident
+        tenetur voluptas.
+      - 
+      - 
+      - spree-ringer-t-shirt
+      - 
+      - 
+    - - 11
+      - 11
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Spree Tote
+      - Dicta cum numquam eum et illo occaecati. Et dolor inventore ipsum incidunt
+        est modi et. Ut animi molestias voluptates et veritatis quos nesciunt dolorem.
+        Nulla rem voluptas sed quo aut. In repudiandae amet et sit blanditiis.
+      - 
+      - 
+      - spree-tote
+      - 
+      - 
+    - - 12
+      - 12
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Spree Bag
+      - Dolores modi sunt impedit aut. Eum illum molestiae dolorem harum occaecati
+        quibusdam. Molestiae pariatur velit et repellendus.
+      - 
+      - 
+      - spree-bag
+      - 
+      - 
+    - - 13
+      - 13
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Ruby on Rails Mug
+      - Architecto omnis sit id est modi officiis. Impedit non fugit ut nihil facilis
+        aliquid voluptatem est. A eum consequatur voluptatem est illo expedita voluptatem.
+        Nam aliquid atque harum ab. Unde quia voluptas temporibus itaque quis recusandae
+        quia explicabo.
+      - 
+      - 
+      - ruby-on-rails-mug
+      - 
+      - 
+    - - 14
+      - 14
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Ruby on Rails Stein
+      - Eos numquam aut ipsa explicabo quis voluptate sit. Aspernatur ipsa nulla omnis
+        mollitia deleniti. Dolores consequatur id numquam sunt eum. Qui eos sequi
+        quisquam illo at. Doloribus perspiciatis officia numquam nulla.
+      - 
+      - 
+      - ruby-on-rails-stein
+      - 
+      - 
+    - - 15
+      - 15
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Spree Stein
+      - Dolorem eum necessitatibus voluptatem mollitia sapiente. Velit deleniti et
+        culpa neque sed. Sint ab alias aliquid est voluptas modi quod. Nostrum dolorem
+        consequuntur quo quas culpa voluptatem.
+      - 
+      - 
+      - spree-stein
+      - 
+      - 
+    - - 16
+      - 16
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Spree Mug
+      - Ea totam ullam fugiat dolorem consequatur ipsa omnis. Et autem sed corporis
+        enim non sunt dolorem id. Corrupti odio est eos totam voluptatibus quis velit.
+        Ullam atque eaque dolores minus.
+      - 
+      - 
+      - spree-mug
+      - 
+      - 
+    hash_rows: 
+    column_types: {}
 - :table: spree_products
   :rows: !ruby/object:ActiveRecord::Result
     columns:
@@ -5805,6 +6580,96 @@
       - 12
     hash_rows: 
     column_types: {}
+- :table: spree_property_translations
+  :rows: !ruby/object:ActiveRecord::Result
+    columns:
+    - id
+    - spree_property_id
+    - locale
+    - created_at
+    - updated_at
+    - name
+    - presentation
+    rows:
+    - - 1
+      - 1
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:33.000000000 Z
+      - Manufacturer
+      - Manufacturer
+    - - 2
+      - 2
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:33.000000000 Z
+      - Brand
+      - Brand
+    - - 3
+      - 3
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:33.000000000 Z
+      - Model
+      - Model
+    - - 4
+      - 4
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:33.000000000 Z
+      - Shirt Type
+      - Shirt Type
+    - - 5
+      - 5
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:33.000000000 Z
+      - Sleeve Type
+      - Sleeve Type
+    - - 6
+      - 6
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:33.000000000 Z
+      - Made from
+      - Made from
+    - - 7
+      - 7
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:33.000000000 Z
+      - Fit
+      - Fit
+    - - 8
+      - 8
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:33.000000000 Z
+      - Gender
+      - Gender
+    - - 9
+      - 9
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:33.000000000 Z
+      - Type
+      - Type
+    - - 10
+      - 10
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:33.000000000 Z
+      - Size
+      - Size
+    - - 11
+      - 11
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:33.000000000 Z
+      - Material
+      - Material
+    hash_rows: 
+    column_types: {}
 - :table: spree_prototypes
   :rows: !ruby/object:ActiveRecord::Result
     columns:
@@ -6063,6 +6928,48 @@
       - 1
       - 2018-10-14 18:26:36.000000000 Z
       - 2018-10-14 18:26:36.000000000 Z
+    hash_rows: 
+    column_types: {}
+- :table: spree_shipping_method_translations
+  :rows: !ruby/object:ActiveRecord::Result
+    columns:
+    - id
+    - spree_shipping_method_id
+    - locale
+    - created_at
+    - updated_at
+    - name
+    rows:
+    - - 1
+      - 1
+      - en
+      - 2018-10-14 18:53:35.000000000 Z
+      - 2018-10-14 18:53:35.000000000 Z
+      - UPS Ground (USD)
+    - - 2
+      - 2
+      - en
+      - 2018-10-14 18:53:35.000000000 Z
+      - 2018-10-14 18:53:35.000000000 Z
+      - UPS Two Day (USD)
+    - - 3
+      - 3
+      - en
+      - 2018-10-14 18:53:35.000000000 Z
+      - 2018-10-14 18:53:35.000000000 Z
+      - UPS One Day (USD)
+    - - 4
+      - 4
+      - en
+      - 2018-10-14 18:53:35.000000000 Z
+      - 2018-10-14 18:53:35.000000000 Z
+      - UPS Ground (EU)
+    - - 5
+      - 5
+      - en
+      - 2018-10-14 18:53:35.000000000 Z
+      - 2018-10-14 18:53:35.000000000 Z
+      - UPS Ground (EUR)
     hash_rows: 
     column_types: {}
 - :table: spree_shipping_method_zones
@@ -25616,6 +26523,30 @@
       - 2018-10-14 18:21:39.000000000 Z
     hash_rows: 
     column_types: {}
+- :table: spree_store_translations
+  :rows: !ruby/object:ActiveRecord::Result
+    columns:
+    - id
+    - spree_store_id
+    - locale
+    - created_at
+    - updated_at
+    - name
+    - meta_description
+    - meta_keywords
+    - seo_title
+    rows:
+    - - 1
+      - 1
+      - en
+      - 2018-10-14 18:53:35.000000000 Z
+      - 2018-10-14 18:53:35.000000000 Z
+      - Spree Demo Site
+      - 
+      - 
+      - 
+    hash_rows: 
+    column_types: {}
 - :table: spree_stores
   :rows: !ruby/object:ActiveRecord::Result
     columns:
@@ -25702,6 +26633,144 @@
       - 
     hash_rows: 
     column_types: {}
+- :table: spree_taxon_translations
+  :rows: !ruby/object:ActiveRecord::Result
+    columns:
+    - id
+    - spree_taxon_id
+    - locale
+    - created_at
+    - updated_at
+    - name
+    - description
+    - meta_title
+    - meta_description
+    - meta_keywords
+    - permalink
+    rows:
+    - - 1
+      - 1
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Categories
+      - 
+      - 
+      - 
+      - 
+      - categories
+    - - 2
+      - 2
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Brands
+      - 
+      - 
+      - 
+      - 
+      - brands
+    - - 3
+      - 3
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Bags
+      - 
+      - 
+      - 
+      - 
+      - bags
+    - - 4
+      - 4
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Mugs
+      - 
+      - 
+      - 
+      - 
+      - mugs
+    - - 5
+      - 5
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Clothing
+      - 
+      - 
+      - 
+      - 
+      - clothing
+    - - 6
+      - 6
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Shirts
+      - 
+      - 
+      - 
+      - 
+      - shirts
+    - - 7
+      - 7
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - T-Shirts
+      - 
+      - 
+      - 
+      - 
+      - t-shirts
+    - - 8
+      - 8
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Ruby
+      - 
+      - 
+      - 
+      - 
+      - ruby
+    - - 9
+      - 9
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Apache
+      - 
+      - 
+      - 
+      - 
+      - apache
+    - - 10
+      - 10
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Spree
+      - 
+      - 
+      - 
+      - 
+      - spree
+    - - 11
+      - 11
+      - en
+      - 2018-10-14 18:53:34.000000000 Z
+      - 2018-10-14 18:53:34.000000000 Z
+      - Rails
+      - 
+      - 
+      - 
+      - 
+      - rails
+    hash_rows: 
+    column_types: {}
 - :table: spree_taxonomies
   :rows: !ruby/object:ActiveRecord::Result
     columns:
@@ -25721,6 +26790,30 @@
       - 2018-10-14 18:26:38.000000000 Z
       - 2018-10-14 18:26:46.000000000 Z
       - 2
+    hash_rows: 
+    column_types: {}
+- :table: spree_taxonomy_translations
+  :rows: !ruby/object:ActiveRecord::Result
+    columns:
+    - id
+    - spree_taxonomy_id
+    - locale
+    - created_at
+    - updated_at
+    - name
+    rows:
+    - - 1
+      - 1
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:33.000000000 Z
+      - Categories
+    - - 2
+      - 2
+      - en
+      - 2018-10-14 18:53:33.000000000 Z
+      - 2018-10-14 18:53:33.000000000 Z
+      - Brands
     hash_rows: 
     column_types: {}
 - :table: spree_taxons
